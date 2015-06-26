@@ -1,0 +1,40 @@
+<%- include header %>
+
+<div>
+  <p class="title">Welcome to Touch of Modern</p>
+  <p class="slugon">Live beyond expectations</p>
+</div>
+
+
+  <% data.forEach(function (product, index) { %>
+
+    <div class="col-xs-12 col-md-6 col-lg-4">
+      <div class="thumbnail">
+        <div class="grid">
+            <figure class="effect-ming">
+              <img src="<%=product.photos.medium_half%>" alt=""/>
+              <figcaption>
+                <div class="figcap-vertical">
+
+                  <div class="figcap-vertical-child">
+                    <p class="closethumb">x</p>
+                    <p class="description"> <%- product.description %></p>
+                  </div>
+                <div>
+              </figcaption>
+            </figure>
+            <div class="button-figure">
+                    <div class="figcap-vertical-child">
+                    <p> <a href="#"><%= product.name %><br><%= product.tagline %></a></p>
+                  </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  <% }) %>
+
+
+
+
+
+<%- include footer %>
