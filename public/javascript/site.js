@@ -1,6 +1,5 @@
 $(window).load(function(){
-   // PAGE IS FULLY LOADED
-   // FADE OUT YOUR OVERLAYING DIV
+    //Showing loading first
    $('#overlay').fadeOut();
    $("#content").css("visibility", "visible")
 });
